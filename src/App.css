@@ -1,38 +1,253 @@
-.App {
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.logo{
+  font-family: 'Rubik Beastly', cursive;
+  text-decoration: none;
+  color:#fff;
+  font-size:30px;
+}
+.sign-in{
+  text-decoration: none;
+  border:2px solid white;
+  height:30px;
+  padding:2px;
+  margin-top:0.5rem;
+  color:white;
+}
+.navigation{
+  display:flex;
+  justify-content: space-between;
+  height:60px;
+  margin-top: 20px;
+  padding:0 32px;
+ 
+}
+.services,.features,.help{
+  padding:0 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.description{
+  padding:0 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.description li{
+  list-style-type: none;
+ }
+ .tick{
+   margin-right:1rem ;
+ }
+.hero-section{
+ background-color:  rgb(0, 153, 255);
+ border-bottom: none;
+}
+.banner-image{
+  
+  height: 400px;;
+}
+.waves{
+  height:150px;
+  background-color:#F5F5F5 ;
+}
+.form{
+
+ margin-right: 2rem;
+ border-radius:4px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+}
+.form-heading{
+  padding-top:1rem ;
+}
+.make-flex{
+  background-color:white ;
+  width:300px;
+  height:350px;
+  margin:0 auto;
+  padding:0 2rem;
+}
+
+
+.features{
+  background-color:#F5F5F5 ;
+  padding-bottom:2rem ;
+  margin-bottom:2rem ;
+  margin-top:0;
+}
+.feature-heading{
+  margin-bottom:2rem ;
+}
+input {
+  margin-bottom:1rem;
+  box-shadow: inset 0 1px 3px 0 rgb(0 0 0 / 10%);
+  outline:2px;
+  border:none;
+  padding:5px;
+  width:100%;
+
+}
+button{
+  width:100%;
+  box-shadow: inset 0 1px 3px 0 rgb(0 0 0 / 10%);
+  outline:2px;
+  border:none;
+  background-color:	#89CFF0;
+  padding:5px;
+}
+.services{
+  margin-top:2rem;
+  margin-bottom:2rem ;
+}
+.service-heading{
+  margin-bottom:1rem ;
+}
+/*for card area */
+.card{
+  text-align: center;
+  border: 1px solid #0d6efd !important;
+  padding:1rem;
+ 
+}
+.service-heading,.feature-heading,.form-heading,
+.testimonial-heading,.help-heading,.description-heading,.faq-heading{
+  font-weight: 700;
+}
+/*testimonial */
+.testimonial-heading{
+  margin:2rem 0;
+  text-align: center;
+}
+.testimonial-image{
+  width:200px;
+  object-fit: cover;
+}
+.img-card{
+ width:200px;
+ padding-top: 1rem;
+ text-align: center;
+ box-shadow:inset 0 1px 3px 0 rgb(0 0 0 / 10%) ;
+ margin-right:1rem ;
+}
+.email-form {
+  background-color:#F5F5F5 ;
+  margin-right:1rem;
+  margin-bottom: 0.5rem;
+}
+.chat{
+  margin-top:1rem;
+  font-size:22px;
+  font-weight: 700;
+}
+.get-started,.apply{
+  width:auto;
+}
+.Action{
+  background-color: #F5F5F5;
+  height:200px;
+  
+}
+/* .getstart-head{
+  font-s
+} */
+.started{
+  background-color:rgb(0, 153, 255);
+  height:100px;
+}
+.qstn{
+  color:#89CFF0
+}
+.faq-row{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-size:14px;
+  text-align: center;
+}
+.faq-heading{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.footer {
+  background-color:#00008B ;
+  color:ivory;
+}
+.ocean-logo{
+  font-family: 'Rubik Beastly', cursive;
+  font-size:18px ;
+}
+@media only screen and (max-width: 992px) {
+  
+}
+@media only screen and (max-width: 768px) {
+  .features{
+    background-color:#fff ;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .email-form{
+    padding:0 2rem;
+    padding-bottom: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .waves{
+   
+    background-color:#fff ;
   }
+  .logo{
+    font-size:24px;
+  }
+  .sign-in{
+    font-size:14px;
+  }
+  
+}
+@media only screen and (max-width: 562px) {
+  .logo{
+    
+    font-size:20px;
+  }
+ .card{
+   height:200px;
+   font-size:14px;
+   margin:1rem 0;
+ }
+ .service-card{
+   height:200px;
+ }
+ .feature-heading{
+   margin-top: 1rem;
+   
+ }
+ .features{
+   background-color:#fff ;
+ }
+ .waves{
+  background-color:#fff ;
+}
+ .help-card{
+   width:350px;
+   height:350px;
+   font-size:12px;
+ }
+ .tutorial-heading{
+   font-size:15px;
+   font-weight: 700;
+ }
+ .Action{
+   padding-top: 2rem;
+   font-size: 12px;
+ }
+ .getstart-head,.get-started{
+   font-size:18px;
+ }
+ .apply{
+   margin-bottom: 1rem;
+ }
+ .faq-row,.qstn{
+  
+  font-size:12px;
+}
+.ocean-logo{
+   font-size:14px;
+   margin-right: 0.5rem;
+ }
+ .footer{
+  font-size:14px;
+ }
 }
